@@ -9,6 +9,8 @@ set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "" FORCE)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set(CMAKE_SCRIPTS_DIR ${CMAKE_CURRENT_LIST_DIR}/cmake)
 
+include(${CMAKE_SCRIPTS_DIR}/cpm.cmake)
+
 enable_testing()
 add_subdirectory(test)
 add_subdirectory(src)
